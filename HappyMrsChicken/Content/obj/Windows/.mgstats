@@ -1,0 +1,10 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/chicken.xnb","TextureProcessor","Texture2DContent",96200,1109029,0.1246858
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_cluck.wav","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/chicken_cluck.xnb","SoundEffectProcessor","SoundEffectContent",192984,192985,0.1605765
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_eat.wav","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/chicken_eat.xnb","SoundEffectProcessor","SoundEffectContent",253484,253545,0.3328498
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/cut_tree.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/cut_tree.xnb","TextureProcessor","Texture2DContent",14380,31809,0.0139628
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/fence.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/fence.xnb","TextureProcessor","Texture2DContent",5009,4181,0.0059836
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/font_numbers.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/font_numbers.xnb","TextureProcessor","Texture2DContent",29486,82165,0.0099737
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/grass.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/grass.xnb","TextureProcessor","Texture2DContent",4414,4181,0.004985
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/swaying_corn.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/swaying_corn.xnb","TextureProcessor","Texture2DContent",153471,752809,0.0259515
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/water.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/water.xnb","TextureProcessor","Texture2DContent",6269,4181,0.004986

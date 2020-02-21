@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_cluck.wav</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_eat.wav</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/cut_tree.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/fence.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/font_numbers.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/grass.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/swaying_corn.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/water.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

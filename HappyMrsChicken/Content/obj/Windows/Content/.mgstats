@@ -1,0 +1,10 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/chicken.xnb","TextureProcessor","Texture2DContent",96200,1109029,0.1176898
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_cluck.wav","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/chicken_cluck.xnb","SoundEffectProcessor","SoundEffectContent",192984,192985,0.1904876
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_eat.wav","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/chicken_eat.xnb","SoundEffectProcessor","SoundEffectContent",253484,253545,0.1984685
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/cut_tree.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/cut_tree.xnb","TextureProcessor","Texture2DContent",92118,285601,0.1067139
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/fence.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/fence.xnb","TextureProcessor","Texture2DContent",5009,4181,0.0887825
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/font_numbers.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/font_numbers.xnb","TextureProcessor","Texture2DContent",29486,82165,0.0927719
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/grass.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/grass.xnb","TextureProcessor","Texture2DContent",4414,4181,0.0059843
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/swaying_corn.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/swaying_corn.xnb","TextureProcessor","Texture2DContent",153471,752809,0.1117229
+"C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/water.png","C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/water.xnb","TextureProcessor","Texture2DContent",6269,4181,0.0049864

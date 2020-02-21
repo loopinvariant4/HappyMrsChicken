@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CDBF1B7-6A4C-420D-9041-3CD1C24A5E6A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HappyMrsChicken</RootNamespace>
+    <AssemblyName>HappyMrsChicken</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Chunk.cs" />
+    <Compile Include="Components\AnimatedSprite.cs" />
+    <Compile Include="Components\ChickenAnimation.cs" />
+    <Compile Include="Components\ChickenState.cs" />
+    <Compile Include="Components\ChickenStateAction.cs" />
+    <Compile Include="Components\ComponentBase.cs" />
+    <Compile Include="Components\ComponentStore.cs" />
+    <Compile Include="Components\FiniteStateMachine.cs" />
+    <Compile Include="Components\IComponent.cs" />
+    <Compile Include="Components\InputActionReactor.cs" />
+    <Compile Include="Components\IRenderable.cs" />
+    <Compile Include="Components\Position.cs" />
+    <Compile Include="Components\Sprite.cs" />
+    <Compile Include="Components\Velocity.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\EntityBuilder.cs" />
+    <Compile Include="Entities\EntityManager.cs" />
+    <Compile Include="Entities\InputAction.cs" />
+    <Compile Include="Globals\DebugSettings.cs" />
+    <Compile Include="Systems\AnimationRenderer.cs" />
+    <Compile Include="Systems\Collider.cs" />
+    <Compile Include="Systems\Corn.cs" />
+    <Compile Include="Systems\EntityFSMUpdater.cs" />
+    <Compile Include="Systems\GameInputHandler.cs" />
+    <Compile Include="Systems\Input\IInputReceiver.cs" />
+    <Compile Include="Systems\Input\InputHandlerBase.cs" />
+    <Compile Include="Systems\Input\KeyboardExtended.cs" />
+    <Compile Include="Systems\Input\KeyboardStateExtended.cs" />
+    <Compile Include="Systems\Input\MouseInputAction.cs" />
+    <Compile Include="Systems\Score.cs" />
+    <Compile Include="Utils\IdFountain.cs" />
+    <Compile Include="IRenderable.cs" />
+    <Compile Include="IUpdatable.cs" />
+    <Compile Include="MainGame.cs" />
+    <Compile Include="Utils\Perlin.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Systems\AnimatedSpriteRenderer.cs" />
+    <Compile Include="Systems\Camera.cs" />
+    <Compile Include="Systems\FpsUps.cs" />
+    <Compile Include="Systems\GridLines.cs" />
+    <Compile Include="Systems\ISystem.cs" />
+    <Compile Include="Systems\SpriteRenderer.cs" />
+    <Compile Include="Systems\Sys.cs" />
+    <Compile Include="Systems\SystemManager.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="TileManager.cs" />
+    <Compile Include="Utils\GameSpriteFont.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fence.png" />
+    <Content Include="Content\grass.png" />
+    <Content Include="Content\simple_enclosure.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\water.png" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
