@@ -55,7 +55,7 @@ namespace HappyMrsChicken.Components
         {
             xy = pos;
             this.size = size;
-            rect = new RectangleF(X, Y, size.X, size.X);
+            rect = new RectangleF(X, Y, size.X, size.Y);
         }
 
         public Position(int entityId, Vector2 size) : this(entityId, Vector2.Zero, size)

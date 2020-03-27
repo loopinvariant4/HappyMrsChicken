@@ -55,7 +55,7 @@ namespace HappyMrsChicken
             Entity e = new Entity();
             EntityManager.Instance.AddEntity(e);
             ChickenAnimation anim = new ChickenAnimation(e.Id, getChickenSprites(e.Id), getChickenSounds(e.Id));
-            Position p = new Position(e.Id, new Vector2(200, 200), anim.Size);
+            Position p = new Position(e.Id, new Vector2(125, 125), anim.Size);
             Velocity v = new Velocity(e.Id, 10, 0);
             v.CurrentSpeed = 3;
 
@@ -116,9 +116,15 @@ namespace HappyMrsChicken
         private void initialiseSystems()
         {
             GridLines.InitLine(this.GraphicsDevice);
-            TileManager tm = new TileManager();
+            Dictionary<char, Texture2D> textureMapper = new Dictionary<char, Texture2D>();
+            textureMapper.Add('G', Content.Load<Texture2D>("terrain/grass"));
+            textureMapper.Add('W', Content.Load<Texture2D>("terrain/water"));
+            textureMapper.Add('B', createTransparentTexture());
+
+            TileManager tm = new TileManager(textureMapper);
             tm.Init(this);
-            tm.LoadFromFile("Content\\simple_enclosure.txt");
+            //tm.LoadFromFile("Content\\simple_enclosure.txt");
+            tm.ReadFileHMC(@"C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\map.txt");
             SystemManager.Instance.Add<TileManager>(tm);
 
             KeyboardExtended keyboard = new KeyboardExtended();
@@ -152,6 +158,19 @@ namespace HappyMrsChicken
             Score score = new Score();
             score.Init(this);
             SystemManager.Instance.Add<Score>(score);
+        }
+
+        private Texture2D createTransparentTexture()
+        {
+            Color[] data = new Color[Tile.SIZE * Tile.SIZE];
+            for (int i = 0; i < Tile.SIZE * Tile.SIZE; i++)
+            {
+                data[i] = Color.Transparent;
+                data[i].A = 0;
+            }
+            var transparent = new Texture2D(this.GraphicsDevice, Tile.SIZE, Tile.SIZE);
+            transparent.SetData<Color>(data);
+            return transparent;
         }
 
         /// <summary>

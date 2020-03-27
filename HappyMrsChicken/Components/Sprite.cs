@@ -16,6 +16,7 @@ namespace HappyMrsChicken.Components
         private Texture2D texture;
         private int width, height;
         private Rectangle source;
+        Vector2 size;
         private Point textureOffset = Point.Zero;
         #endregion
 
@@ -23,12 +24,15 @@ namespace HappyMrsChicken.Components
         public float Scale { get; set; }
         public bool IsVisible { get; set; }
         public Vector2 Origin { get; set; }
+        public string SpriteName { get; set; }
+        public Vector2 Size => size;
         #endregion
 
         #region ctor
         public Sprite(int entityId, string spriteName, ContentManager cm, Point texOffset) : base(entityId)
         {
             textureOffset = texOffset;
+            SpriteName = spriteName;
             loadTexture(spriteName, cm);
             Scale = 1f;
             Origin = new Vector2(0.5f, 0.5f);
@@ -57,6 +61,7 @@ namespace HappyMrsChicken.Components
             texture = cm.Load<Texture2D>(spriteName);
             width = texture.Width;
             height = texture.Height;
+            size = new Vector2(width, height);
             source = new Rectangle(textureOffset.X, textureOffset.Y, width, height);
         }
         #endregion

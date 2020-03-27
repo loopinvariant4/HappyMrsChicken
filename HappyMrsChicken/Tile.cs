@@ -15,15 +15,14 @@ namespace HappyMrsChicken
         #region vars
         public const int SIZE = 32;
 
-        [NonSerialized]
-        private Texture2D texture;
+        public Texture2D Texture { get; set; }
 
         #endregion
 
         #region properties 
         public int X { get; set; }
         public int Y { get; set; }
-        public char TileType { get; set; }
+        public char TileType { get; set; } = 'B';
         public bool IsOccupied { get; set; }
 
         public bool HasFogOfWar { get; set; }
@@ -50,7 +49,7 @@ namespace HappyMrsChicken
         public Tile(int x, int y, char tileType, Texture2D texture) : this(x, y)
         {
             this.TileType = tileType;
-            this.texture = texture;
+            Texture = texture;
         }
 
         public void WriteToStream(BinaryWriter bw)
@@ -77,7 +76,7 @@ namespace HappyMrsChicken
 
         public void Render(SpriteBatch sb)
         {
-            sb.Draw(texture, new Vector2(X * SIZE, Y * SIZE), Color.White);
+            sb.Draw(Texture, new Vector2(X * SIZE, Y * SIZE), Color.White);
         }
 
         public override string ToString()

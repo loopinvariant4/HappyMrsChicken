@@ -66,6 +66,7 @@ namespace HappyMrsChicken.Systems
                 var endY = y + size.Y;
                 var tiles = tm.GetTilesUnderArea(x, y, endX, endY);
                 var isBlocked = false;
+                // check if the corn is not on a impassable tile
                 foreach (var tile in tiles)
                 {
                     if (!tile.IsPassable)
@@ -74,8 +75,15 @@ namespace HappyMrsChicken.Systems
                         break;
                     }
                 }
-                if (isBlocked == false)
+                if(isBlocked)
                 {
+                    continue;
+                }
+                // check if the corn is not on another physical object
+                var items = tm.GetTerrainObjectsUnderArea(x, y, size);
+                if(items.Count == 0)
+                {
+
                     return new Vector2(x, y);
                 }
             }

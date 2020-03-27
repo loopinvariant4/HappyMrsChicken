@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyMrsChicken", "HappyMrsChicken\HappyMrsChicken.csproj", "{9CDBF1B7-6A4C-420D-9041-3CD1C24A5E6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEditor", "GameEditor\GameEditor.csproj", "{49006E51-DB42-443B-BE22-A16A5C9117E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{9CDBF1B7-6A4C-420D-9041-3CD1C24A5E6A}.Debug|x86.Build.0 = Debug|x86
 		{9CDBF1B7-6A4C-420D-9041-3CD1C24A5E6A}.Release|x86.ActiveCfg = Release|x86
 		{9CDBF1B7-6A4C-420D-9041-3CD1C24A5E6A}.Release|x86.Build.0 = Release|x86
+		{49006E51-DB42-443B-BE22-A16A5C9117E9}.Debug|x86.ActiveCfg = Debug|x86
+		{49006E51-DB42-443B-BE22-A16A5C9117E9}.Debug|x86.Build.0 = Debug|x86
+		{49006E51-DB42-443B-BE22-A16A5C9117E9}.Release|x86.ActiveCfg = Release|x86
+		{49006E51-DB42-443B-BE22-A16A5C9117E9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

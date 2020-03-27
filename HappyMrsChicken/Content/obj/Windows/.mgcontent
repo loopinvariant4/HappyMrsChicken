@@ -8,13 +8,41 @@
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_cluck.wav</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_eat.wav</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/cut_tree.png</File>
-    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/fence.png</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/font_numbers.png</File>
-    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/grass.png</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/swaying_corn.png</File>
-    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/water.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain/grass.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain/water.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/fence.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/log1.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/lotusleaf1.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/lotusleaf2.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/lotusleaf3.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/lotusleaf4.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/mushroom1.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/mushroom2.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/mushroom3.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/mushroom4.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/tree1.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/tree2.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/tree3.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/treestump1.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/treestump2.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

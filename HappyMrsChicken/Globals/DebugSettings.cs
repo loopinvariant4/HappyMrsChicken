@@ -9,6 +9,6 @@ namespace HappyMrsChicken.Globals
     public class DebugSettings
     {
         public static bool ShowSpriteBorders = false;
-        public static bool ShowGrid = false;
+        public static bool ShowGrid = true;
     }
 }

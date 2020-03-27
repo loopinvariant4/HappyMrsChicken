@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken.png</SourceFile>
-  <SourceTime>2020-01-30T08:51:26.6645985+08:00</SourceTime>
+  <SourceTime>2020-03-08T14:14:05.5250758+08:00</SourceTime>
   <DestFile>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/bin/Windows/Content/chicken.xnb</DestFile>
-  <DestTime>2020-01-30T09:02:35.0790362+08:00</DestTime>
+  <DestTime>2020-03-08T14:14:51.0311977+08:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T00:35:54+08:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

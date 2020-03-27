@@ -96,7 +96,7 @@ namespace HappyMrsChicken.Components
                 anim.Play();
             }
             var pos = EntityManager.Instance.GetComponent<Position>(EntityId);
-            if (!DoesColliedWithTerrain(pos, deltaX, deltaY))
+            if (!DoesCollideWithTerrain(pos, deltaX, deltaY))
             {
                 pos.X += deltaX;
                 pos.Y += deltaY;
@@ -113,7 +113,7 @@ namespace HappyMrsChicken.Components
             }
         }
 
-        private bool DoesColliedWithTerrain(Position p, int deltaX, int deltaY)
+        private bool DoesCollideWithTerrain(Position p, int deltaX, int deltaY)
         {
             var tm = SystemManager.Instance.Get<TileManager>();
             var tiles = tm.GetTilesUnderArea(
@@ -128,7 +128,8 @@ namespace HappyMrsChicken.Components
                     return true;
                 }
             }
-            return false;
+
+            return tm.GetTerrainObjectsUnderArea(p.X + deltaX, p.Y + deltaY, p.Size).Count > 0;
         }
     }
 }
