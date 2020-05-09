@@ -140,7 +140,7 @@ namespace HappyMrsChicken
             TileManager tm = new TileManager(textureMapper);
             tm.Init(this);
             //tm.LoadFromFile("Content\\simple_enclosure.txt");
-            tm.ReadFileHMC(@"C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\map.txt");
+            tm.ReadFileHMC(@"C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\Content\map.txt");
             SystemManager.Instance.Add<TileManager>(tm);
 
             KeyboardExtended keyboard = new KeyboardExtended();
