@@ -49,3 +49,5 @@ C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\Content\terrain_o
 C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\Content\terrain_objects\mushroom4.xnb
 C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\Content\terrain_objects\treestump1.xnb
 C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\Content\terrain_objects\treestump2.xnb
+C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\Content\gropochek.xnb
+C:\code\repos\HappyMrsChicken\GameEditor\bin\Windows\x86\Debug\Content\cackle.xnb

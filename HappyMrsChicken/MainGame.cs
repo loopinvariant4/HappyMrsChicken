@@ -54,10 +54,10 @@ namespace HappyMrsChicken
         {
             Entity e = new Entity();
             EntityManager.Instance.AddEntity(e);
-            ChickenAnimation anim = new ChickenAnimation(e.Id, getChickenSprites(e.Id), getChickenSounds(e.Id));
+            ChickenAnimation anim = new ChickenAnimation(e.Id, getChickenSprites(e.Id), getChickenSounds());
             Position p = new Position(e.Id, new Vector2(125, 125), anim.Size);
             Velocity v = new Velocity(e.Id, 10, 0);
-            v.CurrentSpeed = 3;
+            v.CurrentSpeed = 4;
 
             InputActionReactor iar = new InputActionReactor(e.Id, SystemManager.Instance.Get<GameInputHandler>());
             FiniteStateMachine fsm = new FiniteStateMachine(e.Id, null);
@@ -70,13 +70,20 @@ namespace HappyMrsChicken
             EntityManager.Instance.AddComponent<Velocity>(e.Id, v);
             EntityManager.Instance.AddComponent<InputActionReactor>(e.Id, iar);
 
+            // register chicken
             var collider = SystemManager.Instance.Get<Collider>();
             var corn = SystemManager.Instance.Get<Corn>();
-
             collider.Register(e.Id, corn.Kernel);
+
+            // register gropochek
+            var npcs = SystemManager.Instance.Get<NPCManager>().NPCs;
+            foreach(var npc in npcs)
+            {
+                collider.Register(npc, corn.Kernel);
+            }
         }
 
-        private Dictionary<ChickenState, SoundEffectInstance> getChickenSounds(int id)
+        private Dictionary<ChickenState, SoundEffectInstance> getChickenSounds()
         {
             var cluck = Content.Load<SoundEffect>("chicken_cluck").CreateInstance();
             var eat = Content.Load<SoundEffect>("chicken_eat").CreateInstance();
@@ -88,6 +95,15 @@ namespace HappyMrsChicken
             dict.Add(ChickenState.MoveDown, cluck);
             dict.Add(ChickenState.Eat, eat);
 
+            return dict;
+        }
+
+        private Dictionary<GropochekState, SoundEffectInstance> getGropochekSounds()
+        {
+            var cackle = Content.Load<SoundEffect>("cackle").CreateInstance();
+
+            var dict = new Dictionary<GropochekState, SoundEffectInstance>();
+            dict.Add(GropochekState.Eating, cackle);
             return dict;
         }
 
@@ -158,6 +174,12 @@ namespace HappyMrsChicken
             Score score = new Score();
             score.Init(this);
             SystemManager.Instance.Add<Score>(score);
+
+            Gropochek chek = new Gropochek(this.Content, GraphicsDevice.Viewport, getGropochekSounds());
+            NPCManager npcManager = new NPCManager();
+            npcManager.RegisterNPC(chek.Instance.Id, chek);
+
+            SystemManager.Instance.Add<NPCManager>(npcManager);
         }
 
         private Texture2D createTransparentTexture()

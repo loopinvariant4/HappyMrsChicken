@@ -42,6 +42,7 @@ namespace HappyMrsChicken.Components
             TPF = fps;
             Position = Vector2.Zero;
             Origin = Vector2.Zero;
+            IsHidden = false;
         }
         public AnimatedSprite(int entityId, Texture2D texture, int rows, int cols, int fps, bool shouldReverseAnimation) : base(entityId)
         {
@@ -65,6 +66,7 @@ namespace HappyMrsChicken.Components
             TPF = fps;
             Position = Vector2.Zero;
             Origin = Vector2.Zero;
+            IsHidden = false;
         }
 
         #region properties
@@ -92,16 +94,34 @@ namespace HappyMrsChicken.Components
         public Vector2 Origin { get; set; }
 
         public Vector2 Size => size;
+
+        public bool IsHidden { get; set; }
+
+        public bool ShouldDrawShadow { get; set; }
         #endregion
         public void Draw(GameTime gameTime, SpriteBatch sb)
         {
+            if (IsHidden)
+            {
+                return;
+            }
             var pos = EntityManager.Instance.GetComponent<Position>(EntityId);
  
             sb.Draw(texture, pos.XY, frames[currFrame], Color.White, 0f, Origin, 1.0f, SpriteEffects.None, 0f);
+            if(ShouldDrawShadow)
+            {
+                drawShadow(sb, texture, pos, frames[currFrame], Origin);
+            }
             if(DebugSettings.ShowSpriteBorders)
             {
                 GridLines.DrawRectangle(sb, pos.XY, frames[currFrame].Width, frames[currFrame].Height, Origin, Color.Red);
             }
+        }
+
+        private void drawShadow(SpriteBatch sb, Texture2D texture, Position pos, Rectangle rectangle, Vector2 origin)
+        {
+            sb.Draw(texture, new Vector2(pos.X + rectangle.Width - 80, pos.Y + rectangle.Height - 70), rectangle, 
+                new Color(0,0,0,40), 0f, Origin, 0.75f, SpriteEffects.None, 0f);
         }
 
         public void Update(GameTime gameTime)

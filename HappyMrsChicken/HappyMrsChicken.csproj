@@ -61,6 +61,8 @@
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\EntityBuilder.cs" />
     <Compile Include="Entities\EntityManager.cs" />
+    <Compile Include="Entities\Gropochek.cs" />
+    <Compile Include="Entities\GropochekState.cs" />
     <Compile Include="Entities\InputAction.cs" />
     <Compile Include="Globals\DebugSettings.cs" />
     <Compile Include="Systems\AnimationRenderer.cs" />
@@ -73,7 +75,9 @@
     <Compile Include="Systems\Input\KeyboardExtended.cs" />
     <Compile Include="Systems\Input\KeyboardStateExtended.cs" />
     <Compile Include="Systems\Input\MouseInputAction.cs" />
+    <Compile Include="Systems\NPCManager.cs" />
     <Compile Include="Systems\Score.cs" />
+    <Compile Include="Utils\EventBus.cs" />
     <Compile Include="Utils\IdFountain.cs" />
     <Compile Include="IRenderable.cs" />
     <Compile Include="IUpdatable.cs" />

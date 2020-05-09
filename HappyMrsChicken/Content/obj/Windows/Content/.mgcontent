@@ -4,11 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/cackle.wav</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken.png</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_cluck.wav</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/chicken_eat.wav</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/cut_tree.png</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/font_numbers.png</File>
+    <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/gropochek.png</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/swaying_corn.png</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain/grass.png</File>
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain/water.png</File>
@@ -29,6 +31,8 @@
     <File>C:/code/repos/HappyMrsChicken/HappyMrsChicken/Content/terrain_objects/treestump2.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -13,6 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin cackle.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:cackle.wav
+
 #begin chicken.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -60,6 +66,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:font_numbers.png
+
+#begin gropochek.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:gropochek.png
 
 #begin swaying_corn.png
 /importer:TextureImporter

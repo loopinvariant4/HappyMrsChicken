@@ -104,12 +104,15 @@ namespace HappyMrsChicken.Components
 
             var collider = SystemManager.Instance.Get<Collider>();
             var list = collider.GetCollisions(EntityId);
-            foreach(var item in list)
+            foreach (var item in list)
             {
-                collider.UnregisterTarget(EntityId, item);
+                //collider.UnregisterTarget(EntityId, item);
                 var corn = SystemManager.Instance.Get<Corn>();
                 corn.OnCollide(EntityId);
                 anim.SetAnimation(ChickenState.Eat);
+                var score = SystemManager.Instance.Get<Score>();
+                score.Increment();
+
             }
         }
 

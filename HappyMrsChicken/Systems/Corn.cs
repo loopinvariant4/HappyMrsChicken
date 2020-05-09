@@ -1,5 +1,6 @@
 ﻿using HappyMrsChicken.Components;
 using HappyMrsChicken.Entities;
+using HappyMrsChicken.Utils;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using System;
@@ -34,12 +35,13 @@ namespace HappyMrsChicken.Systems
 
         public void OnCollide(int entityId)
         {
-            var score = SystemManager.Instance.Get<Score>();
-            score.Increment();
-            EntityManager.Instance.RemoveEntity(Kernel.Id);
-            createNewKernel();
-            var collider = SystemManager.Instance.Get<Collider>();
-            collider.Register(entityId, Kernel);
+            //var score = SystemManager.Instance.Get<Score>();
+            //score.Increment();
+            //EntityManager.Instance.RemoveEntity(Kernel.Id);
+            setNewPosition();
+            EventBus.FireCornSpawned(this);
+            //var collider = SystemManager.Instance.Get<Collider>();
+            //collider.Register(entityId, Kernel);
         }
 
         private void createNewKernel()
@@ -53,6 +55,13 @@ namespace HappyMrsChicken.Systems
             EntityManager.Instance.AddComponent<AnimatedSprite>(Kernel.Id, sprite);
             EntityManager.Instance.AddComponent<Position>(Kernel.Id, p);
             sprite.Play();
+        }
+
+        private void setNewPosition()
+        {
+            var sprite = EntityManager.Instance.GetComponent<Position>(Kernel.Id);
+            var position = EntityManager.Instance.GetComponent<Position>(Kernel.Id);
+            position.XY = getPosition(sprite.Size);
         }
 
         private Vector2 getPosition(Vector2 size)

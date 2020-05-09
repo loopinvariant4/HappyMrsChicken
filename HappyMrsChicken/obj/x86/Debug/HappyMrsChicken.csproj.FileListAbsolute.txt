@@ -45,3 +45,5 @@ C:\code\repos\HappyMrsChicken\HappyMrsChicken\bin\Windows\x86\Debug\Content\terr
 C:\code\repos\HappyMrsChicken\HappyMrsChicken\bin\Windows\x86\Debug\Content\terrain_objects\treestump1.xnb
 C:\code\repos\HappyMrsChicken\HappyMrsChicken\bin\Windows\x86\Debug\Content\terrain_objects\treestump2.xnb
 C:\code\repos\HappyMrsChicken\HappyMrsChicken\obj\x86\Debug\HappyMrsChicken.csprojAssemblyReference.cache
+C:\code\repos\HappyMrsChicken\HappyMrsChicken\bin\Windows\x86\Debug\Content\gropochek.xnb
+C:\code\repos\HappyMrsChicken\HappyMrsChicken\bin\Windows\x86\Debug\Content\cackle.xnb
